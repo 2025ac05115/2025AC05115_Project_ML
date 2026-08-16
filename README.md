@@ -47,11 +47,11 @@ GitHub Repo Link https://github.com/2025ac05115/2025AC05115_Project_ML/tree/main
 **Comparison Table of Metrics**
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
 | --- | --- | --- | --- | --- | --- | --- |
-| Logistic Regression | 0.608 | 0.8243 | 0.592 | 0.970 | 0.735 | 0.213 |
-| Decision Tree | 0.723 | 0.7772 | 0.730 | 0.803 | 0.765 | 0.433 |
-| KNN | 0.665 | 0.7972 | 0.731 | 0.636 | 0.680 | 0.335 |
-| Naive Bayes | 0.733 | 0.7980 | 0.774 | 0.740 | 0.757 | 0.463 |
-| Random Forest | **0.756** | **0.814** | **0.8077** | **0.732** | **0.771** | **0.515** |
+| Logistic Regression | 0.608 | None | 0.592 | 0.970 | 0.735 | 0.213 |
+| Decision Tree | 0.723 | None | 0.730 | 0.803 | 0.765 | 0.433 |
+| KNN | 0.665 | None | 0.731 | 0.636 | 0.680 | 0.335 |
+| Naive Bayes | 0.733 | None | 0.774 | 0.740 | 0.757 | 0.463 |
+| Random Forest | **0.756** | **None** | **0.814** | **0.732** | **0.771** | **0.515** |
 
 
 **Observations on Model Performance**
