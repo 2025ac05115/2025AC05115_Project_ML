@@ -67,10 +67,10 @@ if uploaded_file is not None:
     if auc is not None:
         st.write(f"AUC: {auc:.3f}")
 
-    # Confusion Matrix (no seaborn/matplotlib)
+    # Confusion Matrix (Streamlit table instead of heatmap)
     cm = confusion_matrix(y_test, y_pred)
-    st.subheader(f"Confusion Matrix - {choice}")
     cm_df = pd.DataFrame(cm,
                          index=["Actual 0", "Actual 1"],
                          columns=["Pred 0", "Pred 1"])
+    st.subheader(f"Confusion Matrix - {choice}")
     st.table(cm_df)
