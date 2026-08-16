@@ -1,3 +1,10 @@
 # Core libraries
 numpy==1.26.4
 pandas==2.2.2
+<<<<<<< HEAD
+=======
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.12.2 
+>>>>>>> 90735a9be3220eac488737f7eb508a442e8a7bad
