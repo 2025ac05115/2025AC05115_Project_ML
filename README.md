@@ -67,7 +67,4 @@ GitHub Repo Link https://github.com/2025ac05115/2025AC05115_Project_ML/tree/main
 
 **Visualizations**
 Confusion matrices for each model are made available
-
-Bar chart comparison of metrics across models
-
-(Generated in the notebook using Seaborn and Matplotlib)
+Just select the model to get the same.
