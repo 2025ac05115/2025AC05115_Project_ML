@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 from models.logistic_regression import LogisticRegressionScratch
 from models.knn import KNN
@@ -69,11 +67,10 @@ if uploaded_file is not None:
     if auc is not None:
         st.write(f"AUC: {auc:.3f}")
 
-    # Confusion Matrix
+    # Confusion Matrix (no seaborn/matplotlib)
     cm = confusion_matrix(y_test, y_pred)
-    fig, ax = plt.subplots()
-    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
-                xticklabels=["Pred 0","Pred 1"],
-                yticklabels=["Actual 0","Actual 1"], ax=ax)
-    ax.set_title(f"Confusion Matrix - {choice}")
-    st.pyplot(fig)
+    st.subheader(f"Confusion Matrix - {choice}")
+    cm_df = pd.DataFrame(cm,
+                         index=["Actual 0", "Actual 1"],
+                         columns=["Pred 0", "Pred 1"])
+    st.table(cm_df)
