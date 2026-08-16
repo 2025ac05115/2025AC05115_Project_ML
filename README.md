@@ -57,7 +57,7 @@ GitHub Repo Link https://github.com/2025ac05115/2025AC05115_Project_ML/tree/main
 **Observations on Model Performance**
 | ML Model Name | Observation about model performance |
 | --- | --- |
-| Logistic Regression | Solid baseline with decent AUC, but lower MCC compared to tree-based models. |
+| Logistic Regression | Solid baseline, but lower MCC compared to tree-based models. |
 | Decision Tree | Strong recall and balanced performance, but prone to overfitting. |
 | KNN | Performs similarly to Logistic Regression but requires scaling for stability. |
 | Naive Bayes | High precision but weaker recall, leading to lower F1 and MCC. |
