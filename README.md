@@ -57,11 +57,11 @@ GitHub Repo Link https://github.com/2025ac05115/2025AC05115_Project_ML/tree/main
 **Observations on Model Performance**
 | ML Model Name | Observation about model performance |
 | --- | --- |
-| Logistic Regression | Solid baseline, but lower MCC compared to tree-based models. |
-| Decision Tree | Strong recall and balanced performance, but prone to overfitting. |
-| KNN | Performs similarly to Logistic Regression but requires scaling for stability. |
-| Naive Bayes | High precision but weaker recall, leading to lower F1 and MCC. |
-| Random Forest | Outperforms all other models across every metric, showing robustness and generalization ability. |
+| Logistic Regression | Logistic Regression is over‑sensitive, flagging nearly everything as positive. Good for recall‑heavy tasks, but not reliable overall. |
+| Decision Tree | Decision Tree achieves a good balance between precision and recall, making it a dependable choice. However, it may overfit depending on dataset complexity. |
+| KNN | KNN is conservative — it predicts positives only when confident, leading to higher precision but lower recall. Suitable when false positives are costly. |
+| Naive Bayes | Naive Bayes performs reliably across metrics, making it a robust baseline model. It handles class distributions well and is efficient. |
+| Random Forest | Random Forest is the overall winner. It balances precision and recall effectively, achieves the highest accuracy, and shows the strongest correlation with true labels. |
 | **Overall Winner** | **Random Forest** |
 
 
